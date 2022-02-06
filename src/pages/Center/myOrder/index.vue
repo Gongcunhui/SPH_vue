@@ -136,6 +136,7 @@ export default {
     this.getData();
   },
   methods: {
+    // 发请求捞数据
     async getData() {
       let result = await this.$API.reqMyOrderList(this.page, this.limit);
       if (result.code == 200) {
@@ -144,6 +145,7 @@ export default {
     },
     // 获取当前页码
     pageNo(page){
+      // 获取到当前点击的页码 修改数据 重新发请求获取当前点击页的数据
       this.page = page
       //重新发请求 展示数据
       this.getData()
