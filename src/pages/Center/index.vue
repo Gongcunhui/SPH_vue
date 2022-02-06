@@ -65,7 +65,9 @@
 
   export default {
     name: 'Center',
+    
     // components:{myOrder}
+   
   }
 </script>
 
